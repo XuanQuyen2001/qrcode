@@ -1,0 +1,79 @@
+body{
+    background: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#wrapper {
+    position: relative;
+    background: rgb(41, 41, 41);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+#wrapper #input{
+    max-width: 500px;
+    margin: 15px 0px;
+    font-size:20px;
+    font-family: sans-serif , 'OpenSan';
+    height: 45px;
+    border-radius: 15px;
+}
+
+#wrapper #btn{
+    background: #ff0707;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f0ffee;
+    transition: 0.25s;
+    border-color: aqua;
+}
+
+#wrapper #btn:hover{
+    background-color: rgb(9, 213, 231);
+    color: rgb(255, 10, 10);
+    width: 300px;
+    transition: 0.5s;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    margin-top: 20px;
+}
+
+#toast{
+    width: 200px;
+    background: rgb(54, 255, 54);
+    text-align: center;
+    margin: 20px 0px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100px;
+    color: #420707;
+    font-size: 15px;
+    transition: 0.3s;
+    position: absolute;
+    bottom:-120px;
+    opacity: 0;
+}
+
+#toast.show{
+    visibility: inherit;
+    opacity: 1;
+    bottom:-100px;
+}
